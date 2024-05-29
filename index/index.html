@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Simples</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>uma baita projetola</h1>
+        <button id="messageButton">Clique aqui</button>
+        <p id="message" class="hidden">Olá, esta é uma mensagem exibida com JavaScript! feito pela Issaga Dadju</p>
+    </div>
+    <script src="scripts.js"></script>
+    <style>
+        body {
+            background-color: aquamarine;
+    font-family: Arial, sans-serif;
+    background-image: url('17167eea94427a4269b6d42408c6a304_4876600980674395345.gif');
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    background-color:aqua;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.gif-container {
+    width: 300px; 
+    height: 200px; 
+    background-image: url('17167eea94427a4269b6d42408c6a304_4876600980674395345.gif');
+}
+
+button {
+    padding: 20px 30px;
+    font-size: 25px;
+    margin-top: 30px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background-color: #007BFF;
+    color: white;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.hidden {
+    display: none;
+}
+    </style>
+    <script>
+        document.getElementById('messageButton').addEventListener('click', function() {
+    var messageParagraph = document.getElementById('message');
+    if (messageParagraph.classList.contains('hidden')) {
+        messageParagraph.classList.remove('hidden');
+    } else {
+        messageParagraph.classList.add('hidden');
+    }
+});
+
+    </script>
+</body>
+</html>
+
